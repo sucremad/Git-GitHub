@@ -46,7 +46,7 @@ cd Proje
 Bu klasörün bir git projesi olduğunu belirtmeliyiz: <br/><br/>
 `git init` <br/><br/>
 Bundan sonra .git adında gizli bir klasör eklenmiş olacaktır. <br/><br/>
-Dosyalar ekleyip üzerinde değişiklikler yaptıktan sonra bu dosyaların durumunu `git status` diyerek görebilirsiniz.  <br/>
+Dosyalar ekleyip üzerinde değişiklikler yaptıktan sonra bu dosyaların durumunu `git status` diyerek görebilirsiniz.  <br/> <br/>
 
 ![](https://cybling.files.wordpress.com/2021/01/image-1.png) <br/>
 
@@ -64,7 +64,7 @@ Eğer hepsini eklemek istiyorsanız şu komut bunu sağlayacaktır. <br/>
 
 `git add .` <br/>
 
-Bu komutları girip tekrar `git status` dersek commit edilmeye hazır dosyaları görürüz. <br/>
+Bu komutları girip tekrar `git status` dersek commit edilmeye hazır dosyaları görürüz. <br/> <br/>
 
 ![](https://cybling.files.wordpress.com/2021/01/image-2.png) <br/><br/>
 
@@ -76,12 +76,12 @@ Peki commit ne demek? Commit işlemiyle stage bölgesindeki dosyaları kalıcı 
 `-m` ile yapacağınız bu değişiklerin ne olduğunu kısaca tanımlayabilirsiniz. Bu gerçekten kullanışlı olacaktır. <br/>
 
 `git commit -m "Bazı hatalar düzeltildi."
-` <br/>
+` <br/><br/>
 ![](https://cybling.files.wordpress.com/2021/01/image-3.png) <br/><br/>
-Yaptığınız tüm değişiklikleri git log komutu ile görebilirsiniz. <br/>
+Yaptığınız tüm değişiklikleri git log komutu ile görebilirsiniz. <br/><br/>
 ![](https://cybling.files.wordpress.com/2021/01/image-4.png) <br/><br/>
 
-`--oneline` ile kısaltılmış bir şekile dönüşsün. <br/>
+`--oneline` ile kısaltılmış bir şekile dönüşsün. <br/><br/>
 ![](https://cybling.files.wordpress.com/2021/01/image-5.png) <br/>
 
 Son n tane logu görmek isterseniz `git log -p -2` <br/>
@@ -119,7 +119,7 @@ git branch newbranch
 <br/>
 Başka bir brancha geçelim: <br/>
 
-`git checkout newbranch` <br/>
+`git checkout newbranch` <br/><br/>
 ![](https://cybling.files.wordpress.com/2021/01/image-6.png) <br/> <br/>
 
 Eğer başka bir branchtaki değişiklikleri bulunduğunuz branchla birleştirmek istiyorsanız merge işleminin vakti gelmiş demektir. <br/>
@@ -131,7 +131,7 @@ git merge <branch> <branch2>
 git merge newbranch
 ```
 
-
+<br/>
 
 ![](https://cybling.files.wordpress.com/2021/01/image-7.png) <br/><br/>
 
@@ -159,7 +159,7 @@ GitHub’dan bir repoyu bilgisayarınıza kopyalamak isterseniz:
 ```
 git clone <repolinki.git>
 ```
-Repository linkini GitHub’da repositorye geldikten sonra Code butonuna tıklayarak alabilirsiniz. <br/>
+Repository linkini GitHub’da repositorye geldikten sonra Code butonuna tıklayarak alabilirsiniz. <br/><br/>
 ![](https://cybling.files.wordpress.com/2021/01/image-8.png) <br/>
 
 Repo bulunduğunuz dizine kopyalanacaktır.<br/>
