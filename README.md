@@ -176,4 +176,6 @@ Bu işlemden sonra GitHub’ta ‘newbranch’ ın altında projenizin güncelle
 `git pull` ile uzak repo ile local repodaki farklılıklar kontrol edilir ve değişiklik varsa bu değişiklikler local reponuza yani bilgisayarınıza indirilir.
 
 
+----
 
+[:link: Blog](https://cybling.wordpress.com/2021/01/05/git-nasil-kullanilir/)
