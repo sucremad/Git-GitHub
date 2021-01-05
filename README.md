@@ -54,9 +54,7 @@ Görüldüğü gibi geçiş bölgesine eklenmemiş dosyalar var. Bunları geçi�
 
 <br/>
 
-Belirli bir dosyayı eklemek istiyorsanız dosyayı belirtmelisiniz.
-
-<br/>
+Belirli bir dosyayı eklemek istiyorsanız dosyayı belirtmelisiniz. <br/>
 
 `git add <file>` <br/>
 
