@@ -43,43 +43,120 @@ Bu klasörün bir git projesi olduğunu belirtmeliyiz: <br/>
 Bundan sonra .git adında gizli bir klasör eklenmiş olacaktır. <br/>
 Dosyalar ekleyip üzerinde değişiklikler yaptıktan sonra bu dosyaların durumunu `git status` diyerek görebilirsiniz.  <br/>
 
+![](https://cybling.files.wordpress.com/2021/01/image-1.png) <br/>
+
+Görüldüğü gibi geçiş bölgesine eklenmemiş dosyalar var. Bunları geçiş bölgesine ekleyelim.
+
+<br/>
+
+Belirli bir dosyayı eklemek istiyorsanız dosyayı belirtmelisiniz.
+
+<br/>
+
+`git add <file>` <br/>
+
+Eğer hepsini eklemek istiyorsanız şu komut bunu sağlayacaktır. <br/>
+
+`git add .` <br/>
+
+Bu komutları girip tekrar `git status` dersek commit edilmeye hazır dosyaları görürüz. <br/>
+
+![](https://cybling.files.wordpress.com/2021/01/image-2.png) <br/>
+
+Eğer değişiklikleri geçiş bölgesinden geri almak isterseniz: <br/>
+`git restore --stage <file>` <br/>
+
+Peki commit ne demek? Commit işlemiyle stage bölgesindeki dosyaları kalıcı olarak git veri tabanına ekleriz. <br/>
+
+`-m` ile yapacağınız bu değişiklerin ne olduğunu kısaca tanımlayabilirsiniz. Bu gerçekten kullanışlı olacaktır. <br/>
+
+`git commit -m "Bazı hatalar düzeltildi."
+` <br/>
+![](https://cybling.files.wordpress.com/2021/01/image-3.png) <br/>
+Yaptığınız tüm değişiklikleri git log komutu ile görebilirsiniz. <br/>
+![](https://cybling.files.wordpress.com/2021/01/image-4.png) <br/>
+
+`--oneline` ile kısaltılmış bir şekile dönüşsün. <br/>
+![](https://cybling.files.wordpress.com/2021/01/image-5.png) <br/>
+
+Son n tane logu görmek isterseniz `git log -p -2` <br/>
+
+Değişikliklerden vazgeçtiyseniz ve önceki versiyonlara dönmek istiyorsanız eğer commitlere atanan hash numarasını kullanarak bunu yapabilirsiniz. <br/>
+
+`git checkout <hash_value>` <br/>
+`git checkout c44c02e` <br/>
+
+Kalıcı olarak commitleri geri almak isterseniz: <br/>
+
+`git revert <hash_value>` <br/>
+`git revert af5bc51`  <br/>
+
+Projenizde yapılan değişiklerin projenize nasıl etki edeceğini bilmiyorsunuz ve riskli bir durum içerisindesiniz. Asıl kodun bozulmasını istemiyorsunuz. İşte burada devreye branch denilen kavram giriyor. Branchlar pojenizi dallandırmaya yarar. Yani yaptığınız değişiklikleri A branchına yaparsanız, projede ekli olan diğer branchlardaki kod etkilenmeyecektir. <br/>
+
+Projede var olan branchları listeyelim ve hangi brancta olduğumuzu görelim: <br/>
 
 
+`git branch` <br/>
+
+Yeni bir branch ekleyelim: <br/>
+
+`git branch <branchname>` <br/>
+`git branch newbranch` <br/>
+Başka bir brancha geçelim: <br/>
+
+`git checkout newbranch` <br/>
+![](https://cybling.files.wordpress.com/2021/01/image-6.png) <br/>
+
+Eğer başka bir branchtaki değişiklikleri bulunduğunuz branchla birleştirmek istiyorsanız merge işleminin vakti gelmiş demektir. <br/>
+
+Önce değişiklikleri aktarmak istediğiniz branche geçiniz. Komutta değişiklikleri alacağımız branchları kullanacağız. <br/>
+
+`git merge <branch> <branch2>` <br/>
+`git merge newbranch` <br/>
+
+![](https://cybling.files.wordpress.com/2021/01/image-7.png) <br/>
+
+Uzak branchteki değişiklikleri indirmek için (Kodunuzda değişiklik olmaz sadece güncellemeleri görürsünüz.): <br/>
 
 
+``` git fetch <remote>
+git fetch <remote> <branch>
+
+git fetch origin newbranch
+git fetch blog master 
+```
+<br/>
+
+_remote_: Remote bağlantı. Nasıl kurulur: <br/>
+
+```
+git remote add <isimlendir> <bağlantı>
+git remote add blog https://github.com/user/Repo.git
+```
+
+### GitHub için nasıl kullanılır
+GitHub’dan bir repoyu bilgisayarınıza kopyalamak isterseniz: 
+
+```
+git clone <repolinki.git>
+```
+Repository linkini GitHub’da repositorye geldikten sonra Code butonuna tıklayarak alabilirsiniz. <br/>
+![](https://cybling.files.wordpress.com/2021/01/image-8.png) <br/>
+
+Repo bulunduğunuz dizine kopyalanacaktır.<br/>
+
+Proje üzerinde çalışıp işlemlerini tamamladıktan sonra şu komutla güncel hali Github’a yükleyebilirsiniz: <br/>
+
+```
+git push <remote> <branch>
+git push blog newbranch
+```
+Bu işlemden sonra GitHub’ta ‘newbranch’ ın altında projenizin güncellediğiniz hali görünecektir. <br/>
 
 
+`git fetch` ve `git merge` komutlarını tek bir komuta sığdırabiliriz: `git pull`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+`git pull` ile uzak repo ile local repodaki farklılıklar kontrol edilir ve değişiklik varsa bu değişiklikler local reponuza yani bilgisayarınıza indirilir.
 
 
 
