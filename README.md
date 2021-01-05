@@ -1,5 +1,5 @@
 # Git Nasıl Kullanılır
-----
+
 
 Git bir versiyon kontrol sistemidir ve GitHub ile aynı şey değildir. 
 Projenizde ne zaman ve nerde değişiklikler yaptığınızı görebilirsiniz.
@@ -15,7 +15,7 @@ Proje farklı dallara ve bölümlere ayrılabilir.
 [İndirme linki](https://git-scm.com/downloads)
 
 ## Temel Git Komutları
-----
+
 
 ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fqph.fs.quoracdn.net%2Fmain-qimg-3aa29f29ede6a8245b6964f663c60339&f=1&nofb=1)
 
@@ -25,22 +25,27 @@ Göndermek istediğiniz tüm değişiklikler buraya eklenmelidir.*
 
 Öncelikle git yapılandırmasını yapalım. Bu yapılan değişikliklerin kimin tarafından yapıldığını anlamakta yardımcı olur. <br/>
 
-`  git config --global user.name "Ad Soyad/Kullanıcı adı"  ` <br/>
-`git config --global user.email "blabla@gmail.com"` <br/>
 
-<br/>
+```
+git config --global user.name "Ad Soyad/Kullanıcı adı"  
+git config --global user.email "blabla@gmail.com"
+```
+
 
 Bunları görebilmek için  `git config --list`  komutunu kullanabilirsiniz. <br/>
 
 Sıra local repository oluşturmakta. Önce projeyi oluşturmak istediğiniz dizine geçin, klasörüsünüzü oluşturun ve bu klasöre gidin. Git Bash ile yapabilirsiniz: <br/>
-`cd Dizin ` <br/>
-` mkdir Proje` <br/>
-`cd Proje` <br/>
-<br/>
 
-Bu klasörün bir git projesi olduğunu belirtmeliyiz: <br/>
-`git init` <br/>
-Bundan sonra .git adında gizli bir klasör eklenmiş olacaktır. <br/>
+```
+cd Dizin 
+mkdir Proje
+cd Proje
+```
+
+
+Bu klasörün bir git projesi olduğunu belirtmeliyiz: <br/><br/>
+`git init` <br/><br/>
+Bundan sonra .git adında gizli bir klasör eklenmiş olacaktır. <br/><br/>
 Dosyalar ekleyip üzerinde değişiklikler yaptıktan sonra bu dosyaların durumunu `git status` diyerek görebilirsiniz.  <br/>
 
 ![](https://cybling.files.wordpress.com/2021/01/image-1.png) <br/>
@@ -61,9 +66,9 @@ Eğer hepsini eklemek istiyorsanız şu komut bunu sağlayacaktır. <br/>
 
 Bu komutları girip tekrar `git status` dersek commit edilmeye hazır dosyaları görürüz. <br/>
 
-![](https://cybling.files.wordpress.com/2021/01/image-2.png) <br/>
+![](https://cybling.files.wordpress.com/2021/01/image-2.png) <br/><br/>
 
-Eğer değişiklikleri geçiş bölgesinden geri almak isterseniz: <br/>
+Eğer değişiklikleri geçiş bölgesinden geri almak isterseniz: <br/><br/>
 `git restore --stage <file>` <br/>
 
 Peki commit ne demek? Commit işlemiyle stage bölgesindeki dosyaları kalıcı olarak git veri tabanına ekleriz. <br/>
@@ -72,9 +77,9 @@ Peki commit ne demek? Commit işlemiyle stage bölgesindeki dosyaları kalıcı 
 
 `git commit -m "Bazı hatalar düzeltildi."
 ` <br/>
-![](https://cybling.files.wordpress.com/2021/01/image-3.png) <br/>
+![](https://cybling.files.wordpress.com/2021/01/image-3.png) <br/><br/>
 Yaptığınız tüm değişiklikleri git log komutu ile görebilirsiniz. <br/>
-![](https://cybling.files.wordpress.com/2021/01/image-4.png) <br/>
+![](https://cybling.files.wordpress.com/2021/01/image-4.png) <br/><br/>
 
 `--oneline` ile kısaltılmış bir şekile dönüşsün. <br/>
 ![](https://cybling.files.wordpress.com/2021/01/image-5.png) <br/>
@@ -83,13 +88,20 @@ Son n tane logu görmek isterseniz `git log -p -2` <br/>
 
 Değişikliklerden vazgeçtiyseniz ve önceki versiyonlara dönmek istiyorsanız eğer commitlere atanan hash numarasını kullanarak bunu yapabilirsiniz. <br/>
 
-`git checkout <hash_value>` <br/>
-`git checkout c44c02e` <br/>
+
+```
+git checkout <hash_value>
+git checkout c44c02e
+```
+ <br/>
 
 Kalıcı olarak commitleri geri almak isterseniz: <br/>
 
-`git revert <hash_value>` <br/>
-`git revert af5bc51`  <br/>
+```
+git revert <hash_value>
+git revert af5bc51
+```
+
 
 Projenizde yapılan değişiklerin projenize nasıl etki edeceğini bilmiyorsunuz ve riskli bir durum içerisindesiniz. Asıl kodun bozulmasını istemiyorsunuz. İşte burada devreye branch denilen kavram giriyor. Branchlar pojenizi dallandırmaya yarar. Yani yaptığınız değişiklikleri A branchına yaparsanız, projede ekli olan diğer branchlardaki kod etkilenmeyecektir. <br/>
 
@@ -100,21 +112,28 @@ Projede var olan branchları listeyelim ve hangi brancta olduğumuzu görelim: <
 
 Yeni bir branch ekleyelim: <br/>
 
-`git branch <branchname>` <br/>
-`git branch newbranch` <br/>
+```
+git branch <branchname>
+git branch newbranch
+```
+<br/>
 Başka bir brancha geçelim: <br/>
 
 `git checkout newbranch` <br/>
-![](https://cybling.files.wordpress.com/2021/01/image-6.png) <br/>
+![](https://cybling.files.wordpress.com/2021/01/image-6.png) <br/> <br/>
 
 Eğer başka bir branchtaki değişiklikleri bulunduğunuz branchla birleştirmek istiyorsanız merge işleminin vakti gelmiş demektir. <br/>
 
 Önce değişiklikleri aktarmak istediğiniz branche geçiniz. Komutta değişiklikleri alacağımız branchları kullanacağız. <br/>
 
-`git merge <branch> <branch2>` <br/>
-`git merge newbranch` <br/>
+```
+git merge <branch> <branch2>
+git merge newbranch
+```
 
-![](https://cybling.files.wordpress.com/2021/01/image-7.png) <br/>
+
+
+![](https://cybling.files.wordpress.com/2021/01/image-7.png) <br/><br/>
 
 Uzak branchteki değişiklikleri indirmek için (Kodunuzda değişiklik olmaz sadece güncellemeleri görürsünüz.): <br/>
 
