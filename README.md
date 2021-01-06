@@ -48,7 +48,7 @@ Bu klasörün bir git projesi olduğunu belirtmeliyiz: <br/><br/>
 Bundan sonra .git adında gizli bir klasör eklenmiş olacaktır. <br/><br/>
 Dosyalar ekleyip üzerinde değişiklikler yaptıktan sonra bu dosyaların durumunu `git status` diyerek görebilirsiniz.  <br/> <br/>
 
-![](https://cybling.files.wordpress.com/2021/01/image-1.png) <br/>
+![](https://media.discordapp.net/attachments/694610695752515656/796119934090215484/unknown.png) <br/>
 
 Görüldüğü gibi geçiş bölgesine eklenmemiş dosyalar var. Bunları geçiş bölgesine ekleyelim.
 
