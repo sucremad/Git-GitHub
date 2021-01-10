@@ -17,15 +17,15 @@
 
 
 
-<p>Lisans seçip seçmemek size kalmıştır. GitHub şöyle belirtiyor:</p>
+<p>Lisans seçip seçmemek size kalmıştır. GitHub şöyle belirtiyor:</p> <br/>
 
 
 
 <figure class="wp-block-pullquote"><blockquote><p></p><cite>GitHub&#8217;daki public depolar genellikle açık kaynaklı yazılımları paylaşmak için kullanılır. Deponuzun gerçekten açık kaynak olması için, başkalarının yazılımı kullanması, değiştirmesi ve dağıtması için onu lisanslamanız gerekir.</cite></blockquote></figure>
 
+<br/>
 
-
-<p>Şu link doğru lisansı seçmenize yardımcı olacaktır: <a href="https://choosealicense.com/" rel="nofollow">https://choosealicense.com/</a></p>
+<p>Şu link doğru lisansı seçmenize yardımcı olacaktır: <a href="https://choosealicense.com/" rel="nofollow">https://choosealicense.com/</a></p> <br/>
 
 
 
@@ -37,7 +37,7 @@
 
 
 
-<p>Oluşturduğunuz repoyu Code kısmında göreceğiniz linki kullanarak <code>git clone</code> ile bilgisayarınıza kopyalabilirsiniz.</p>
+<p> <br/>Oluşturduğunuz repoyu Code kısmında göreceğiniz linki kullanarak <code>git clone</code> ile bilgisayarınıza kopyalabilirsiniz.</p>
 
 
 
@@ -53,7 +53,7 @@
 
 
 
-<p>Sorunlar, yapılacak işler, hatalar, istekler ve daha fazlası belirtilebilir ve izlenebilir. Filtreleyebilir (etiket) ve kategorileyebilirsiniz (milestones) &#8211; Proje büyüdükçe takip etmek zorlaşacaktır.</p>
+<p>Sorunlar, yapılacak işler, hatalar, istekler ve daha fazlası belirtilebilir ve izlenebilir. Filtreleyebilir (etiket) ve kategorileyebilirsiniz (milestones) &#8211; Proje büyüdükçe takip etmek zorlaşacaktır.<br/></p>
 
 
 
@@ -69,7 +69,7 @@
 
 
 
-<p>Issue ile ilgilenecek olan kişiler belirlenebilir (Assignees).</p>
+<p><br/>Issue ile ilgilenecek olan kişiler belirlenebilir (Assignees).</p>
 
 
 
@@ -89,7 +89,7 @@
 
 
 
-<p>Ve işi bittiğinde bu issueları kapatabilirsiniz.</p>
+<p><br/>Ve işi bittiğinde bu issueları kapatabilirsiniz.</p>
 
 
 
@@ -113,9 +113,9 @@
 
 
 
-<p><code>mikasakun </code>hesabına <code>sucremad </code>hesabından fork edelim.</p>
+<p><br/><code>mikasakun </code>hesabına <code>sucremad </code>hesabından fork edelim.<br/></p>
 
-
+<p><br/></p>
 
 <div style="height:35px;" aria-hidden="true" class="wp-block-spacer"></div>
 
@@ -129,9 +129,9 @@
 
 
 
-<p>Artık proje <code>mikasakun </code>hesabında da bulunuyor. Projeye örnek bir modül ekleyelim ve daha sonra bunu proje sahibine gönderelim.</p>
+<p><br/>Artık proje <code>mikasakun </code>hesabında da bulunuyor. Projeye örnek bir modül ekleyelim ve daha sonra bunu proje sahibine gönderelim.</p>
 
-
+<p><br/></p>
 
 <div style="height:37px;" aria-hidden="true" class="wp-block-spacer"></div>
 
@@ -145,9 +145,9 @@
 
 
 
-<p>Butona tıkladıktan sonra yaptığınız değişiklikleri göreceksiniz:</p>
+<p><br/>Butona tıkladıktan sonra yaptığınız değişiklikleri göreceksiniz:</p>
 
-
+<p><br/></p>
 
 <div style="height:20px;" aria-hidden="true" class="wp-block-spacer"></div>
 
@@ -161,9 +161,9 @@
 
 
 
-<p>Göndermek istediğiniz branchı seçebilirsiniz.</p>
+<p><br/>Göndermek istediğiniz branchı seçebilirsiniz.</p>
 
-
+<p><br/></p>
 
 <div style="height:41px;" aria-hidden="true" class="wp-block-spacer"></div>
 
@@ -177,9 +177,9 @@
 
 
 
-<p>Pull Requesti yapmış olduk. Projenin sahibi onaylarsa merge edecektir. Yani kendi projesiyle birleştirecektir.</p>
+<p><br/>Pull Requesti yapmış olduk. Projenin sahibi onaylarsa merge edecektir. Yani kendi projesiyle birleştirecektir.</p>
 
-
+<p><br/></p>
 
 <div style="height:38px;" aria-hidden="true" class="wp-block-spacer"></div>
 
@@ -193,9 +193,9 @@
 
 
 
-<p>Onayladıktan sonra yaptıklarınız aktarılacak ve projede siz de görüneceksiniz.</p>
+<p><br/>Onayladıktan sonra yaptıklarınız aktarılacak ve projede siz de görüneceksiniz.</p>
 
-
+<p><br/></p>
 
 <div style="height:51px;" aria-hidden="true" class="wp-block-spacer"></div>
 
