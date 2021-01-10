@@ -1,4 +1,4 @@
-## Git ve Github
+## Git ve GitHub
 
 * [Git Nasıl Kullanılır?](git.md)
 * [GitHub: Issue, Fork, Pull Request](github.md)
