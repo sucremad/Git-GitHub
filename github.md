@@ -199,8 +199,9 @@
 
 <div style="height:51px;" aria-hidden="true" class="wp-block-spacer"></div>
 
-----
-:link: [Blog yazısı](https://cybling.wordpress.com/2021/01/10/github-issue-fork-pull-request/)
+
 
 <div class="wp-block-image"><figure class="aligncenter size-large"><img data-attachment-id="274" data-permalink="https://cybling.wordpress.com/image-21/" data-orig-file="https://cybling.files.wordpress.com/2021/01/image-21.png" data-orig-size="1584,866" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-21" data-image-description="" data-medium-file="https://cybling.files.wordpress.com/2021/01/image-21.png?w=300" data-large-file="https://cybling.files.wordpress.com/2021/01/image-21.png?w=1000" src="https://cybling.files.wordpress.com/2021/01/image-21.png?w=1024" alt="" class="wp-image-274" srcset="https://cybling.files.wordpress.com/2021/01/image-21.png?w=1024 1024w, https://cybling.files.wordpress.com/2021/01/image-21.png?w=150 150w, https://cybling.files.wordpress.com/2021/01/image-21.png?w=300 300w, https://cybling.files.wordpress.com/2021/01/image-21.png?w=768 768w, https://cybling.files.wordpress.com/2021/01/image-21.png 1584w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
 
+----
+:link: [Blog yazısı](https://cybling.wordpress.com/2021/01/10/github-issue-fork-pull-request/)
